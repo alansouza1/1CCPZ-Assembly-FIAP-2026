@@ -1,5 +1,5 @@
 section .data
-    msg db "Hello, FIAP!", 0x0A ; 0x0A is newline
+    msg db "Hello, World!", 0x0A ; 0x0A is newline
     msg_len equ $ - msg
 
 section .text
