@@ -1,0 +1,15 @@
+# Objects and Binaries
+*.o
+exercises/**/main
+# If you name your executables differently, add them here or use a general rule
+# But be careful not to ignore .asm files!
+
+# Docker
+docker/.env
+
+# Node.js
+node_modules/
+package-lock.json
+
+# OS
+.DS_Store
