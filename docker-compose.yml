@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  asm-dev:
+    build:
+      context: ./docker
+      dockerfile: Dockerfile
+    container_name: asm-dev
+    volumes:
+      - .:/app
+    working_dir: /app
+    stdin_open: true # For interactive gdb or shell
+    tty: true
