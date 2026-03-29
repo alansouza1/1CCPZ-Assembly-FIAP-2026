@@ -4,26 +4,26 @@ Assembly Exercises for FIAP 2026.
 ## Structure
 - `exercises/`: Weekly exercises and chapter studies.
 - `projects/`: Larger assignments.
-- `docker/`: Toolchain configuration (nasm, gcc, gdb).
+- `Dockerfile`: Toolchain configuration (nasm, gcc, gdb, etc.).
+- `docker-compose.yml`: Environment orchestration.
 
 ## Prerequisites
 - [Docker](https://www.docker.com/) and [Docker Compose](https://docs.docker.com/compose/)
-- Node.js (for npm orchestration scripts)
 
 ## Getting Started
 1. **Build the environment**:
    ```bash
-   npm run docker:build
+   docker compose build
    ```
 
 2. **Start the container**:
    ```bash
-   npm run docker:up
+   docker compose up -d
    ```
 
 3. **Access the shell**:
    ```bash
-   npm run docker:shell
+   docker exec -it asm-dev bash
    ```
 
 4. **Compile and run an exercise (inside the container)**:
@@ -34,6 +34,6 @@ Assembly Exercises for FIAP 2026.
    ```
 
 ## Useful Commands
-- `npm run docker:shell`: Open a bash session inside the container.
+- `docker exec -it asm-dev bash`: Open a bash session inside the container.
 - `make`: Inside an exercise folder, compiles and links.
 - `make clean`: Removes objects and binaries.
