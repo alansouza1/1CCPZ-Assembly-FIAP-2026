@@ -1,15 +1,21 @@
 # Objects and Binaries
 *.o
-exercises/**/main
-# If you name your executables differently, add them here or use a general rule
-# But be careful not to ignore .asm files!
 
-# Docker
-docker/.env
+# Ignore everything in these folders
+exercises/**
+projects/**
 
-# Node.js
-node_modules/
-package-lock.json
+# Un-ignore the directory structure
+!exercises/**/
+!projects/**/
 
-# OS
-.DS_Store
+# Un-ignore specific source/build files
+!exercises/**/*.asm
+!projects/**/*.asm
+!exercises/**/Makefile
+!projects/**/Makefile
+
+# Optional: Editor and Debugger artifacts
+.gdb_history
+.vscode/
+*~
