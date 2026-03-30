@@ -28,7 +28,7 @@ Assembly Exercises for FIAP 2026.
 
 4. **Compile and run an exercise (inside the container)**:
    ```bash
-   cd exercises/aula-0/01-hello-world
+   cd exercises/week-0-hello-world
    make
    ./main
    ```
